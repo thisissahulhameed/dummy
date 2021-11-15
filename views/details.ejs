@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>online loan management</title>
+  </head>
+  <body>
+    sign up form
+    <form action="/details" method="POST">
+      <h2><%= error %></h2>
+      <label>First Name </label>
+      <input type="text" required name="f_name" />
+      <label>Last Name </label>
+      <input type="text" required name="l_name" />
+      <label>Age</label>
+      <input type="number" required name="age" />
+      <label>Father's Name </label>
+      <input type="text" required name="fahtername" />
+      <label>Mother's Name </label>
+      <input type="text" required name="mothername" />
+      <label>Gender </label>
+      <select name="gender">
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+        <option value="third gender">Third Gender</option>
+      </select>
+      <label>Religion </label>
+      <select name="religion">
+        <option value="hindu">Hindu</option>
+        <option value="muslim">Muslim</option>
+        <option value="Christian">Christian</option>
+        <option value="Buddhist">Buddhist</option>
+      </select>
+      <label>Caste</label>
+      <select name="caste">
+        <option value="sc">sc</option>
+        <option value="st">st</option>
+        <option value="obc">obc</option>
+        <option value="others">others</option>
+      </select>
+      <label>Occupation</label>
+      <input type="text" required name="occupation" />
+      <label>Aadhar No</label>
+      <input type="number" required name="aadhar" />
+      <label>Pan No</label>
+      <input type="number" required name="pan" />
+      <label>Address</label>
+      <textarea name="address" cols="30" rows="10"></textarea>
+      <label>Bank</label>
+      <select name="bank">
+        <option value="sbi">SBI</option>
+        <option value="ind">Indian Bank</option>
+        <option value="hdfc">HDFC Bank</option>
+        <option value="axis">Axis</option>
+      </select>
+      <label>Loan Type</label>
+      <select name="loan_type">
+        <option value="stu_loan">Student Loan</option>
+        <option value="home_loan">Home Loan</option>
+        <option value="gold_loan">Golden Loan</option>
+        <option value="pers_lona">Personal Loan</option>
+      </select>
+      <label>Loan Amount</label>
+      <input type="number" required name="loan_amt" />
+      <button type="submit">submit</button>
+    </form>
+  </body>
+</html>
