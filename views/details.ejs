@@ -6,8 +6,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>online loan management</title>
   </head>
+  <style>
+    h1{
+      background-color: rgb(0, 153, 255);
+      padding: 3px;
+      text-align: center ;
+      color: white;
+    }
+    h2{
+      color: red;
+    }
+    label{
+      color: black;
+      display: block;
+      font-size: large;
+      margin-bottom: 2px;
+      margin-top: 5px;
+      letter-spacing: 0.3px ;
+      margin-left: 20px;
+    }
+    input{
+      border: none;
+      background: none;
+      border: 1px solid rgb(238, 146, 40);
+      padding: 5px;
+      border-radius: 5px;
+      margin-left: 20px;
+
+    }
+    button{
+      border: none;
+      background: none;
+      border: solid 1px rgb(0, 153, 255);
+      padding: 3px;
+      border-radius: 2px;
+      background-color: rgb(0, 153, 255);
+      color: white;
+      font-size: 15px;
+      display: block;
+      margin-left: 20px;
+      margin-top: 10px;
+    }
+
+  </style>
   <body>
-    sign up form
+    <h1 >Online Loan Management</h1>
+
     <form action="/details" method="POST">
       <h2><%= error %></h2>
       <label>First Name </label>

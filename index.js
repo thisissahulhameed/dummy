@@ -9,6 +9,7 @@ const { detailModel } = require("./models/details.model");
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 
+app.use(express.static(__dirname + "/pulbic"))
 app.set("view engine", "ejs");
 
 mongoose.connect(
@@ -17,8 +18,9 @@ mongoose.connect(
   (err) => {
     if (err) {
       console.log(err, "not connected with db");
+    } else {
+      console.log("db is connected");
     }
-    console.log("db is connected");
   }
 );
 
@@ -89,8 +91,8 @@ app.post("/details", async (req, res) => {
     loan_type: req.body.loan_type,
     loan_amt: req.body.loan_amt,
   });
-  await newDetails.save()
-  res.render('success');
+  await newDetails.save();
+  res.render("success");
 });
 
 app.listen(port, () => {
